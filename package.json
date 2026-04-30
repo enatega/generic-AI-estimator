@@ -1,0 +1,35 @@
+{
+  "name": "ai-estimator-react",
+  "version": "1.1.0",
+  "private": false,
+  "description": "React conversion of the Generic AI Estimator WordPress plugin with a secure Express API proxy.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "vite --host 0.0.0.0",
+    "server": "node server/index.js",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "express": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "helmet": "latest",
+    "express-rate-limit": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "eslint": "latest",
+    "@eslint/js": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "globals": "latest"
+  }
+}
