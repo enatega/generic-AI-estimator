@@ -139,7 +139,7 @@ Edit `.env`:
 
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-5.4-mini
+OPENAI_MODEL=gpt-4o-min
 PORT=5174
 CLIENT_ORIGIN=http://localhost:5173
 ```
@@ -184,7 +184,7 @@ For production hosting, deploy the React build output from `dist/` and deploy th
 | Variable | Required | Example | Description |
 |---|---:|---|---|
 | `OPENAI_API_KEY` | Yes | `sk-...` | Server-side OpenAI API key. Never expose in React. |
-| `OPENAI_MODEL` | No | `gpt-5.4-mini` | Model used for estimates. Defaults to `gpt-5.4-mini`. |
+| `OPENAI_MODEL` | No | `gpt-4o-min` | Model used for estimates. Defaults to `gpt-4o-min`. |
 | `PORT` | No | `5174` | Backend server port. |
 | `CLIENT_ORIGIN` | No | `http://localhost:5173` | Allowed frontend origin for CORS. |
 
@@ -281,7 +281,7 @@ Set production variables on the server dashboard:
 
 ```bash
 OPENAI_API_KEY=your_real_key
-OPENAI_MODEL=gpt-5.4-mini
+OPENAI_MODEL=gpt-4o-min
 PORT=5174
 CLIENT_ORIGIN=https://your-frontend-domain.com
 ```
